@@ -43,12 +43,8 @@ class ToDo {
         println("Add Task: ${task.note}")
     }
     fun removeTask (task :Task){
-        for(inTask in tasks){
-            if(inTask == task ){
-                tasks.remove(inTask)
-                println("Remove Task: ${inTask.note}")
-            }
-        }
+       tasks.remove(task)
+        println("Remove Task: ${task.note}")
     }
     fun changeTask(task:Task){
         for (inTask in tasks){
